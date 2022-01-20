@@ -12,9 +12,9 @@ puts 'database is clean'
 10.times do
   categories = ['chinese', 'italian', 'japanese', 'french', 'belgian']
 
-  restaurant = Restaurant.create(
+  Restaurant.create(
     name: Faker::Restaurant.name,
     address: Faker::Address.street_address,
     category: categories.sample
-    )
+  )
 end
